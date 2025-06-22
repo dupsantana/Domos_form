@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="Styles/style_form.css" />
+  <link rel="stylesheet" href="Styles/style_home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <header class="container_header">
+    <div class="header_content">
+      <h1><span>DOMOS</span> COMPANY</h1>
+    </div>
+    <img src="../../LOGO 2.png" alt="" />
+  </header>
+
+  <main>
+    <div class="container_menu">
+      <div class="campo_btns">
+
+        <div class="btn_cadastro" id="btn_cadastro">
+          <button>
+            <i class="fa-solid fa-clipboard fa-lg" style="color: #ffffff;"></i>
+            <span>Cadastrar</span>
+          </button>
+        </div>
+
+        <div class="btn_visualizar" id="btn_visualizar">
+          <button>
+            <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+            <span>Visualizar</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container_form" id="form">
+      <form action="" method="post" id="formElement">
+        <div class="row_container">
+
+          <div class="input-box">
+            <label for="nomeCliente" class="form-label">NOME DO CLIENTE</label>
+            <div class="container_data">
+              <input type="text" class="form_control_nome" name="nome_cliente" id="nomeCliente"
+                placeholder="Inserir nome do cliente">
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="dt_entrada" class="form-label">DATA DE ENTRADA</label>
+            <div class="container_data">
+              <input type="date" class="dt_entrada" name="dt_entrada" id="dt_entrada">
+            </div>
+          </div>
+
+          <div class="campo_statuslead">
+            <label for="statusLead" class="form-label">STATUS DO LEAD</label>
+            <div class="container_select">
+              <select class="form_control_status_lead" name="status_lead" id="statusLead" required>
+                <option value="">-- Selecione --</option>
+                <option value="Ativo">Novo</option>
+                <option value="Inativo">Em contato</option>
+                <option value="Em espera">Orçamento enviado</option>
+                <option value="Negociação">Negociação</option>
+                <option value="Fechado">Fechado</option>
+                <option value="Perdido">Perdido</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="campo_etapa_funil">
+            <label for="etapaFunil" class="form-label">ETAPA DO FUNIL</label>
+            <div class="etapa_funil">
+              <input type="text" name="etapa_funil" id="etapa_funil" class="form_control_funil">
+            </div>
+          </div>
+
+          <div class="campo_dtfechamento">
+            <label for="dataFechamento" class="form-label">DATA DE FECHAMENTO</label>
+            <div class="input-field">
+              <input type="date" name="dtfechamento" id="dataFechamento" class="form_control_dtfechamento">
+            </div>
+          </div>
+
+          <div class="campo_statuspg">
+            <label for="status_pagamento" class="form-label">STATUS DO PAGAMENTO</label>
+            <div class="input-field">
+              <input type="text" name="status_pagamento" id="status_pagamento"
+                class="form_control_status_pagamento" placeholder="">
+            </div>
+          </div>
+
+          <div class="campo_obs full-width">
+            <label for="observacoes" class="form_label_obs">OBSERVAÇÕES</label>
+            <div class="input-field">
+              <textarea name="observacoes" id="observacoes" class="form_control_obs"
+                placeholder="Descreva aqui suas observações"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container_btn">
+          <button type="submit" class="btn-salvar" id="btn-salvar">
+            <i class="fas fa-save"></i> Salvar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- CONTAINER DE VISUALIZAÇÃO (TABELA ESTILO DASHBOARD) -->
+    <div class="tabela-container hidden" id="visualizarContainer">
+      <div class="container-exportar">
+        <button id="btn_exportar_todos">
+          <i class="fas fa-save"></i> Baixar todos os registros
+        </button>
+      </div>
+      <div class="tabela_dashboard">
+        <table id="tabela_registros" class="tabela_estilizada">
+          <thead>
+            <tr>
+              <th>Nome do Cliente</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Linhas serão inseridas via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../JAVASCRIPT/script.js"></script>
+</body>
+
+</html>
