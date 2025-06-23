@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 main {
@@ -119,9 +118,7 @@ select {
     margin: 0 auto; /* Centraliza o textarea dentro do container */
 }
 
-
-
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE EXISTENTE */
 @media (max-width: 768px) {
     .row_container {
         grid-template-columns: 1fr;
@@ -176,9 +173,7 @@ select {
 
 .hidden{
     display: none !important;
-    
 }
-
 
 .container_form {
     transform: translateY(0);
@@ -188,4 +183,32 @@ select {
 .container_form.hidden {
     transform: translateY(-20px);
     /* ... outros estilos ... */
+}
+
+/* --------- RESPONSIVIDADE EXTRA --------- */
+@media (max-width: 992px) {
+    .campo_obs.full-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form_label_obs {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .form_control_obs {
+        width: 100%;
+    }
+
+    .container_btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-salvar {
+        width: 100%;
+        justify-content: center;
+    }
 }
