@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
           if (key === 'etapa_funil') txt = formatBRMoney(txt);
 
           if (key === 'status_pagamento') {
-            // remove acentos antes de gerar a classe
             const slug = txt
               .toLowerCase()
               .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
