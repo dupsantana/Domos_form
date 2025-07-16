@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nome_cliente: form.nome_cliente.value,
       dt_entrada: form.dt_entrada.value,
       status_lead: form.status_lead.value,
-      etapa_funil: form.etapa_funil.value,
+      etapa_funil: form.etapa_funil.value,   // agora aceita string vazia
       dtfechamento: form.dtfechamento.value,
       status_pagamento: form.status_pagamento.value,
       observacoes: form.observacoes.value

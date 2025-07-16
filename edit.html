@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Editar Registro - DOMOS COMPANY</title>
   <link rel="stylesheet" href="SRC/VIEW/Styles/style_edit.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></script>
 </head>
 
 <body>
@@ -35,7 +36,8 @@
         </div>
         <div class="campo_etapa_funil">
           <label for="etapaFunil" class="form-label">VALOR DO ORÇAMENTO</label>
-          <input type="text" name="etapa_funil" id="etapa_funil" class="form_control_funil" required />
+          <!-- removed required to allow blank -->
+          <input type="text" name="etapa_funil" id="etapa_funil" class="form_control_funil" />
         </div>
         <div class="campo_dtfechamento">
           <label for="dataFechamento" class="form-label">DATA DE FECHAMENTO</label>

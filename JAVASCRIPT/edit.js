@@ -1,3 +1,5 @@
+// JAVASCRIPT/edit.js
+
 document.addEventListener('DOMContentLoaded', () => {
   const url = new URL(window.location.href);
   const idx = parseInt(url.searchParams.get('idx'), 10);
