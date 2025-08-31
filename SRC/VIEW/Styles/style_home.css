@@ -283,3 +283,17 @@ body {
         margin-top: 40px;
     }
 }
+
+
+#tabela_registros td {
+  word-wrap: break-word;       /* quebra palavras longas */
+  overflow-wrap: break-word;   /* compatibilidade */
+  white-space: normal;         /* permite quebras de linha */
+  max-width: 200px;            /* largura máxima da célula, ajuste conforme necessário */
+}
+
+#tabela_registros td:last-child button {
+  display: inline-block;    /* mantém os botões em linha */
+  margin-right: 5px;        /* espaço entre os botões */
+  margin-bottom: 3px;       /* espaço caso quebrem para a linha abaixo */
+}
