@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Coluna Editar (ícone) — primeira coluna
       const tdEdit = document.createElement('td');
       const btnEdit = document.createElement('button');
-      btnEdit.innerHTML = '<i class="fa-solid fa-pen"></i>'; // ícone pequeno
+      btnEdit.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>'; // ícone pequeno
       btnEdit.title = 'Editar registro';
       btnEdit.onclick = () => location.href = `edit.html?idx=${i}`;
       tdEdit.appendChild(btnEdit);

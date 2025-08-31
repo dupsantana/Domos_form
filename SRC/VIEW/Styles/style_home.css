@@ -16,7 +16,6 @@ body {
     font-style: italic;
     color: #210f2d;
     margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 
@@ -54,7 +53,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .campo_btns {
