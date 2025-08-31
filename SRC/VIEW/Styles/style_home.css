@@ -68,6 +68,8 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+
+
 /* ESTILOS DOS BOTÕES */
 .btn_cadastro i, 
 .btn_visualizar i {
@@ -105,7 +107,7 @@ body {
 
 /* ================= ESTILO DA TABELA DE VISUALIZAÇÃO ================= */
 .tabela-container {
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     transition: all 0.5s ease;
 }
